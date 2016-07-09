@@ -1,3 +1,7 @@
 node{
- echo ("This is my awesomeeee pipeline");
+ stage 'Checkout'
+ git url: 'https://github.com/ReDeployIO/wordpress-stackable.git'
+
+ stage 'Build'
+ sh "java -version"
 }
